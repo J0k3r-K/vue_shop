@@ -18,7 +18,7 @@ router.beforeEach((to, from, next) => {
   from 代表从那个路径跳转而来
   next 是一个函数,表示放行
   next()表示放行   next('/login)表示强制跳转 */
-  if (to.path == "/login") {
+  if (to.path === '/login') {
     return next()
   }
   // 获取token值

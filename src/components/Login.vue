@@ -42,7 +42,7 @@ export default {
       /* 这是登录表单的数据绑定对象 */
       loginForm: {
         username: '',
-        password: '',
+        password: ''
       },
       /* 这是表单的验证规则对象 */
       loginFormRules: {
@@ -51,30 +51,30 @@ export default {
           {
             required: true,
             message: '请输入用户名',
-            trigger: 'blur',
+            trigger: 'blur'
           },
           {
             min: 3,
             max: 10,
             message: '用户名长度在3到10个字符之间',
-            trigger: 'blur',
-          },
+            trigger: 'blur'
+          }
         ],
         /* 验证密码是否合法  */
         password: [
           {
             required: true,
             message: '请输入密码',
-            trigger: 'blur',
+            trigger: 'blur'
           },
           {
             min: 6,
             max: 15,
             message: '密码长度在6到15个字符之间',
-            trigger: 'blur',
-          },
-        ],
-      },
+            trigger: 'blur'
+          }
+        ]
+      }
     }
   },
   methods: {
@@ -104,8 +104,8 @@ export default {
           this.$router.push('/home')
         }
       })
-    },
-  },
+    }
+  }
 }
 </script>
 
