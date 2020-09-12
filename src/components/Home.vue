@@ -10,6 +10,7 @@ export default {
     logout() {
       window.sessionStorage.clear()
       this.$router.push('/login')
+      this.$message.success('退出成功')
     }
   }
 }
